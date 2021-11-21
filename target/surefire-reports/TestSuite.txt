@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 4, Time elapsed: 1.894 sec <<< FAILURE!
+initializeLauncher(org.apidesign.bck2brwsr.vmtest.impl.LaunchSetup)  Time elapsed: 0.69 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "javax.script.ScriptEngine.eval(String)" because "mach" is null
+	at org.apidesign.bck2brwsr.launcher.JSLauncher.initRhino(JSLauncher.java:96)
+	at org.apidesign.bck2brwsr.launcher.JSLauncher.initialize(JSLauncher.java:72)
+	at org.apidesign.bck2brwsr.vmtest.impl.LaunchSetup.initializeLauncher(LaunchSetup.java:69)
+
